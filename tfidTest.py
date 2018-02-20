@@ -4,7 +4,8 @@ import math
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-sa_texts = list(pd.read_csv("spooky_author.csv")["text"])
+# get the text field from the dataset
+sa_texts = list(pd.read_csv("data.csv")["text"])
 
 data = sa_texts[:3000]
 
